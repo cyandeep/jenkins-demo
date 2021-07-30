@@ -10,6 +10,6 @@ public class HelloController {
     private AtomicInteger count=new AtomicInteger(0);
     @GetMapping("/hello")
     public String hello(){
-        return "hello world, 点击数--："+count.incrementAndGet();
+        return "hello world, 点击数："+count.incrementAndGet();
     }
 }
